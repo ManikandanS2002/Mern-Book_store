@@ -1,0 +1,17 @@
+
+
+{
+  "scripts": {
+    "client": "npm --prefix mern-client run dev",
+    "server": "npm --prefix mern-server start",
+    "devstart": "concurrently \"npm run client\" \"npm run server\"",
+    "buildclient": "npm --prefix mern-client run build",
+    "buildstart": "npm run buildclient && concurrently \"npm run client\" \"npm run server\""
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
