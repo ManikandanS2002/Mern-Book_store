@@ -1,6 +1,7 @@
 
 
 {
+  "homepage": "https://ManikandanS2002.github.io/Mern-Book_store",
   "scripts": {
     "client": "npm --prefix mern-client run dev",
     "server": "npm --prefix mern-server start",
