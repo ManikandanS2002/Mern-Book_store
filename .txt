@@ -1,0 +1,2 @@
+Open the project and run "npm run devstart"  
+For build run "npm run buildstart"
