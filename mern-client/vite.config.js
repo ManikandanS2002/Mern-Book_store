@@ -2,12 +2,12 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base:'mern-client',
+  base:'',
   plugins: [react()],
   build: {
-    outDir: 'mern-client/dist', // This should be relative to the mern-client folder
+    outDir: 'mern-client/dist', 
   },
   server: {
-    open: true, // Automatically open the app in the browser on dev server start
+    open: true, 
   },
 });
