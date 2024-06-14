@@ -1,7 +1,7 @@
 [build]
   base = "mern-client"  # Set the base directory to mern-client
   publish = "mern-client/dist"  # Set the publish directory to mern-client/dist
-  command = "npm run build --prefix mern-client"  # Run the build command in the mern-client folder
+  command = "npm run build
 
 [[redirects]]
   from = "/*"
