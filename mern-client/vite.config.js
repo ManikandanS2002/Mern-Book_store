@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base:'mern-client',
-  plugins: [reactRefresh()],
+  plugins: [react()],
   build: {
     outDir: 'mern-client/dist', // This should be relative to the mern-client folder
   },
