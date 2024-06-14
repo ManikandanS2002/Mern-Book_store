@@ -5,7 +5,7 @@ import { Card } from "flowbite-react";
 const Shop = () => {
   const [books,setBooks] = useState([]);
   useEffect(() =>{
-    fetch("http://localhost:5000/all-books").then(res => res.json()).then(data => setBooks(data))
+    fetch("https://mern-book-store-joo9.onrender.com/all-books").then(res => res.json()).then(data => setBooks(data))
   })
   return (
     <div className='mt-28 px-4 lg:px-24'>
@@ -42,7 +42,7 @@ export default Shop
 //   const [books, setBooks] = useState([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/all-books")
+//     fetch("https://mern-book-store-joo9.onrender.com/all-books")
 //       .then(res => res.json())
 //       .then(data => setBooks(data))
 //       .catch(error => console.error('Error fetching data:', error));

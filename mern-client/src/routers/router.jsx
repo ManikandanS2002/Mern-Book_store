@@ -45,7 +45,7 @@ const router = createBrowserRouter([
           path:'book/:id',
           element:<SingleBook/>,
           loader: async ({ params }) => {
-            const response = await fetch(`http://localhost:5000/book/${params.id}`);
+            const response = await fetch(`https://mern-book-store-joo9.onrender.com/book/${params.id}`);
             return response
           }
         } 
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
           path:"/admin/dashboard/edit-books/:id",
           element:<EditBooks/>,
           loader: async ({ params }) => {
-            const response = await fetch(`http://localhost:5000/book/${params.id}`);
+            const response = await fetch(`https://mern-book-store-joo9.onrender.com/book/${params.id}`);
             return response
           }
         },

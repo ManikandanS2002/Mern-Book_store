@@ -46,7 +46,7 @@ const EditBooks = () => {
     }
 
     // console.log(bookObj);
-    fetch(`http://localhost:5000/book/${id}`,{
+    fetch(`https://mern-book-store-joo9.onrender.com/book/${id}`,{
       method:"PATCH",
       headers:{
         "content-type":"application/json",

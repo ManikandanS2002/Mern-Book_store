@@ -6,11 +6,11 @@ import {Link} from "react-router-dom"
 const ManageBooks = () => {
   const [allBooks,setAllBooks] = useState([]);
   useEffect(()=>{
-    fetch("http://localhost:5000/all-books").then(res => res.json()).then(data => setAllBooks(data));
+    fetch("https://mern-book-store-joo9.onrender.com/all-books").then(res => res.json()).then(data => setAllBooks(data));
   },[])
 
   const handleDelete = (id)=>{
-    fetch(`http://localhost:5000/book/${id}`,{
+    fetch(`https://mern-book-store-joo9.onrender.com/book/${id}`,{
       method:"DELETE",
     }
     ).then(res => res.json())
