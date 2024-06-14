@@ -1,9 +1,0 @@
-[build]
-  base = "mern-client"  # Set the base directory to mern-client
-  publish = "mern-client/dist"  # Set the publish directory to mern-client/dist
-  command = "npm run build
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
